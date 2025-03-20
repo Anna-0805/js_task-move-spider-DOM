@@ -11,10 +11,6 @@ document.addEventListener('click', (e) => {
       e.clientX - wallCoords.left - wall.clientLeft - spider.clientWidth / 2,
   };
 
-  if (spiderCoords.top < 0) {
-    spiderCoords.top = 0;
-  }
-
   if (spiderCoords.left + spider.clientWidth > wall.clientWidth) {
     spiderCoords.left = wall.clientWidth - spider.clientWidth;
   }
